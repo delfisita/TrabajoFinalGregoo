@@ -355,6 +355,10 @@
 "Assets/Final Form Studio/Cliff-scene/Scripts/SimpleCameraController.cs"
 "Assets/Scripts/AutoMovimiento.cs"
 "Assets/Scripts/CameraFollow.cs"
+"Assets/Scripts/Carshooter.cs"
+"Assets/Scripts/GrondSpawner.cs"
+"Assets/Scripts/GroundTile.cs"
+"Assets/Scripts/Obstacle.cs"
 -langversion:9.0
 
 /deterministic

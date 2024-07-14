@@ -1,23 +1,53 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PlayerMovement : MonoBehaviour
+public class AutoMovimiento : MonoBehaviour
 {
-    public float velocidadMovimiento = 5f;  // Velocidad de movimiento lateral del jugador
-    public float rangoMovimiento = 5f;      // Rango máximo de movimiento lateral del jugador
-    public float velocidadGiro = 10f;       // Velocidad de rotación del jugador
 
-    void Update()
+    bool alive = true;
+
+    public float speed = 5;
+    [SerializeField] Rigidbody rb;
+
+    float horizontalInput;
+    [SerializeField] float horizontalMultiplier = 2;
+
+   
+
+   
+    private void FixedUpdate()
     {
-        // Movimiento hacia adelante constante
-        transform.Translate(Vector3.forward * velocidadMovimiento * Time.deltaTime);
+        if (!alive) return;
 
-        // Movimiento lateral con teclado
-        float movimientoHorizontal = Input.GetAxis("Horizontal");
-        transform.Translate(Vector3.right * movimientoHorizontal * velocidadGiro * Time.deltaTime);
-
-        // Limitar el movimiento lateral dentro de un rango
-        float xPos = Mathf.Clamp(transform.position.x, -rangoMovimiento, rangoMovimiento);
-        transform.position = new Vector3(xPos, transform.position.y, transform.position.z);
+        Vector3 forwardMove = transform.forward * speed * Time.fixedDeltaTime;
+        Vector3 horizontalMove = transform.right * horizontalInput * speed * Time.fixedDeltaTime * horizontalMultiplier;
+        rb.MovePosition(rb.position + forwardMove + horizontalMove);
     }
+
+    private void Update()
+    {
+        horizontalInput = Input.GetAxis("Horizontal");
+
+    
+        if (transform.position.y < -5)
+        {
+            Die();
+        }
+    }
+
+    public void Die()
+    {
+        alive = false;
+
+        Invoke("Restart", 2);
+    }
+
+    void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    
 }
+
 
