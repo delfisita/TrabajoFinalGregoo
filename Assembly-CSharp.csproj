@@ -63,6 +63,7 @@
     <Compile Include="Assets\Scripts\Carshooter.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
     <Compile Include="Assets\Scripts\GroundTile.cs" />
+    <Compile Include="Assets\Scripts\wheelController1.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Final Form Studio\Cliff-scene\Scripts\SimpleCameraController.cs" />
     <Compile Include="Assets\Scripts\WheelController.cs" />

@@ -6,6 +6,7 @@ public class GroundTile : MonoBehaviour
     [SerializeField] GameObject obstaclePrefab;
     [SerializeField] GameObject obstacle2Prefab;
     [SerializeField] float obstacle2Chance = 0.2f;
+
     private void Start()
     {
         groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
@@ -23,9 +24,9 @@ public class GroundTile : MonoBehaviour
         int obstacleSpawnIndex = Random.Range(0, 3);
         Transform spawnPoint = transform.GetChild(obstacleSpawnIndex).transform;
 
-
         Instantiate(obstacleToSpawn, spawnPoint.position, Quaternion.identity, transform);
     }
+
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("Player"))

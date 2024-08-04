@@ -360,6 +360,7 @@
 "Assets/Scripts/GroundTile.cs"
 "Assets/Scripts/Obstacle.cs"
 "Assets/Scripts/WheelController.cs"
+"Assets/Scripts/wheelController1.cs"
 -langversion:9.0
 
 /deterministic
