@@ -2,26 +2,19 @@ using UnityEngine;
 
 public class GroundSpawner : MonoBehaviour
 {
+
     [SerializeField] GameObject groundTile;
     Vector3 nextSpawnPoint;
 
     public void SpawnTile(bool spawnItems)
     {
         GameObject temp = Instantiate(groundTile, nextSpawnPoint, Quaternion.identity);
-        Transform spawnPointTransform = temp.transform.Find("Spawn point");
-
-        if (spawnPointTransform != null)
-        {
-            nextSpawnPoint = spawnPointTransform.position;
-        }
-        else
-        {
-            Debug.LogError("SpawnPoint not found in the groundTile prefab!");
-        }
+        nextSpawnPoint = temp.transform.GetChild(1).transform.position;
 
         if (spawnItems)
         {
-             temp.GetComponent<GroundTile>().SpawnObstacle();
+            temp.GetComponent<GroundTile>().SpawnObstacle();
+            temp.GetComponent<GroundTile>().SpawnEnemies();
         }
     }
 

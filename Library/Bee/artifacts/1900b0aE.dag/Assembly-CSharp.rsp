@@ -353,13 +353,13 @@
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity/Hub/Editor/2022.3.18f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 "Assets/Final Form Studio/Cliff-scene/Scripts/SimpleCameraController.cs"
-"Assets/Scripts/AutoMovimiento.cs"
 "Assets/Scripts/CameraFollow.cs"
-"Assets/Scripts/Carshooter.cs"
+"Assets/Scripts/Enemy.cs"
+"Assets/Scripts/GameManager.cs"
 "Assets/Scripts/GrondSpawner.cs"
 "Assets/Scripts/GroundTile.cs"
 "Assets/Scripts/Obstacle.cs"
-"Assets/Scripts/WheelController.cs"
+"Assets/Scripts/Playerdisparo.cs"
 "Assets/Scripts/wheelController1.cs"
 -langversion:9.0
 
