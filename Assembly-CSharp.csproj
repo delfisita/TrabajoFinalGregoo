@@ -60,18 +60,21 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\2022.3.18f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Scripts\Enemy.cs" />
-    <Compile Include="Assets\Scripts\Obstacle.cs" />
-    <Compile Include="Assets\Scripts\EnemeyProyectil.cs" />
-    <Compile Include="Assets\Scripts\Playerdisparo.cs" />
-    <Compile Include="Assets\Scripts\EnemyShooting.cs" />
-    <Compile Include="Assets\Scripts\GroundTile.cs" />
-    <Compile Include="Assets\Scripts\wheelController1.cs" />
-    <Compile Include="Assets\Scripts\GameManager.cs" />
-    <Compile Include="Assets\Scripts\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Powerup\Enemy.cs" />
+    <Compile Include="Assets\Scripts\Escena\GrondSpawner.cs" />
+    <Compile Include="Assets\Scripts\Car\wheelController1.cs" />
+    <Compile Include="Assets\Scripts\Escena\MainMenu.cs" />
+    <Compile Include="Assets\Phoenix3D\Demo\Scripts\MaterialSwithcer.cs" />
     <Compile Include="Assets\Final Form Studio\Cliff-scene\Scripts\SimpleCameraController.cs" />
-    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
-    <Compile Include="Assets\Scripts\GrondSpawner.cs" />
+    <Compile Include="Assets\Scripts\Escena\GameManager.cs" />
+    <Compile Include="Assets\Scripts\Escena\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Escena\Uimanager.cs" />
+    <Compile Include="Assets\Scripts\Car\Playerdisparo.cs" />
+    <Compile Include="Assets\Scripts\Escena\CameraFollow.cs" />
+    <Compile Include="Assets\Scripts\Escena\GroundTile.cs" />
+    <Compile Include="Assets\Scripts\Car\PlayerHealth.cs" />
+    <Compile Include="Assets\Scripts\Escena\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\Escena\HealthBar.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -90,6 +93,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
+    <None Include="Assets\SkySeries Freebie\Hdri setup.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />

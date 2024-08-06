@@ -59,8 +59,8 @@ Transform:
   m_GameObject: {fileID: 2631363906856308271}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1467, y: -0.71, z: 6.9925}
-  m_LocalScale: {x: 3.2266526, y: 1, z: 1.7888558}
+  m_LocalPosition: {x: -3.0453, y: -0.71, z: 6.1229}
+  m_LocalScale: {x: 3.806482, y: 1, z: 1.9627327}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 760796067518188621}
@@ -319,8 +319,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 32.976353, y: 10, z: 18.18835}
-  m_Center: {x: 0.094991684, y: 0, z: 6.9514275}
+  m_Size: {x: 38.980484, y: 10, z: 18.18835}
+  m_Center: {x: -2.907074, y: 0, z: 6.9514275}
 --- !u!114 &5769470460586161657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -337,4 +337,3 @@ MonoBehaviour:
   obstacle2Prefab: {fileID: 5899798016958623939, guid: 096c6fb9c4231db459ce65d835050efd, type: 3}
   enemyPrefab: {fileID: 320226544583792520, guid: 3642180a3c21d734185ebea3c82bcc99, type: 3}
   obstacle2Chance: 0.2
-  enemySpawnChance: 0.1
