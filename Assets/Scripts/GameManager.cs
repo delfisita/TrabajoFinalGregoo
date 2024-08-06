@@ -6,7 +6,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public TextMeshProUGUI scoreText; // UI para mostrar la puntuación
+    public TextMeshProUGUI scoreText;
     private int score;
 
     private void Awake()

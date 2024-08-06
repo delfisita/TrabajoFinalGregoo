@@ -7,6 +7,8 @@ TagManager:
   - GroundTile
   - Enemy
   - Proyectil
+  - Obstacle
+  - Enemyproyectile
   layers:
   - Default
   - TransparentFX

@@ -1,20 +1,23 @@
 using UnityEngine;
-using System.Collections;
-using System.Collections.Generic;
 
 public class Obstacle : MonoBehaviour
 {
-
-   wheelController1 playerMovement;
+    public int damage = 10; // Daño que el obstáculo inflige al jugador
+    private PlayerHealth playerHealth; // Referencia al componente PlayerHealth
 
     private void Start()
     {
-        playerMovement = GameObject.FindObjectOfType<wheelController1>();
+        // Buscar el componente PlayerHealth en el jugador
+        playerHealth = GameObject.FindObjectOfType<PlayerHealth>();
     }
 
-
-    private void Update()
+    private void OnCollisionEnter(Collision collision)
     {
-
+        // Verificar si el objeto con el que colisiona tiene el tag "Player"
+        if (collision.gameObject.CompareTag("Player"))
+        {
+            // Aplicar daño al jugador
+            playerHealth.TakeDamage(damage);
+        }
     }
 }

@@ -62,12 +62,15 @@
   <ItemGroup>
     <Compile Include="Assets\Scripts\Enemy.cs" />
     <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\EnemeyProyectil.cs" />
     <Compile Include="Assets\Scripts\Playerdisparo.cs" />
+    <Compile Include="Assets\Scripts\EnemyShooting.cs" />
     <Compile Include="Assets\Scripts\GroundTile.cs" />
     <Compile Include="Assets\Scripts\wheelController1.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\CameraFollow.cs" />
     <Compile Include="Assets\Final Form Studio\Cliff-scene\Scripts\SimpleCameraController.cs" />
+    <Compile Include="Assets\Scripts\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\GrondSpawner.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ public class GroundTile : MonoBehaviour
     [SerializeField] GameObject obstacle2Prefab;
     [SerializeField] GameObject enemyPrefab; 
     [SerializeField] float obstacle2Chance = 0.2f;
-    [SerializeField] float enemySpawnChance = 0.1f; 
+   // [SerializeField] float enemySpawnChance = 0.1f; 
     private void Start()
     {
         groundSpawner = GameObject.FindObjectOfType<GroundSpawner>();
